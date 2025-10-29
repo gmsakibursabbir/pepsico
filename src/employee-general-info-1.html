@@ -35,7 +35,7 @@
   </head>
 
   <body class="bg-brand-gray-bg">
-    <div class="min-h-screen hidden lg:block">
+    <div class="min-h-screen hidden md:block">
       <div class="grid grid-rows-[auto_1fr] grid-cols-[1fr] h-screen">
         <!-- Header -->
         <header
@@ -43,7 +43,7 @@
         >
           <div class="w-full mx-auto px-5 flex items-center justify-between">
             <!-- Left section -->
-            <div class="flex items-center space-x-3 xl:space-x-5">
+            <a href="#" class="flex items-center space-x-3 xl:space-x-5">
               <!-- Icon -->
               <img
                 src="./assets/svg/logo.svg"
@@ -51,7 +51,7 @@
                 class="w-5 h-5 xl:w-6 xl:h-6"
               />
               <span class="font-bold text-xl xl:text-2xl">People planner</span>
-            </div>
+            </a>
 
             <!-- Center navigation -->
             <nav
@@ -2293,10 +2293,23 @@
           <div class="space-y-[6px]">
             <h3>Starting date</h3>
             <!-- date -->
-            <input
-              type="date"
-              class="h-7 w-full text-xs outline-none placeholder:text-[12px] placeholder:text-[#2B2D41] rounded-[5px] border border-[#EDF0F2] focus:border-brand-dark px-[9px] py-[5px]"
-            />
+            <div
+              class="custom-date-picker w-full h-[27px] border border-[#EDF0F2] rounded-[5px] flex items-center justify-between px-2 bg-white cursor-pointer"
+            >
+              <input
+                type="date"
+                class="date-input absolute opacity-0 w-0 h-0"
+                value="2025-12-31"
+              />
+              <span class="date-display text-xs font-semibold text-brand-dark">
+                31-12-2025
+              </span>
+              <img
+                src="./assets/svg/calendar.svg"
+                alt="calendar"
+                class="w-[13px] h-[13px]"
+              />
+            </div>
 
             <label
               class="inline-flex items-center cursor-pointer select-none gap-2 mt-4"
@@ -2306,7 +2319,7 @@
 
               <!-- visual box that reacts to the input (peer) -->
               <span
-                class="h-[18px] w-[18px] inline-flex items-center justify-center border-2 border-brand-light rounded-[3px] peer-checked:bg-brand-blue-teal peer-checked:border-brand-blue-teal transition-all duration-150"
+                class="h-[18px] w-[18px] inline-flex items-center justify-center border border-brand-light rounded-[3px] peer-checked:bg-brand-blue-teal peer-checked:border-brand-blue-teal transition-all duration-150"
                 aria-hidden="true"
               >
                 <!-- checkmark: hidden by default, shown when peer is checked -->
@@ -2582,7 +2595,7 @@
 
               <!-- visual box that reacts to the input (peer) -->
               <span
-                class="h-[18px] w-[18px] inline-flex items-center justify-center border-2 border-brand-light rounded-[3px] peer-checked:bg-brand-blue-teal peer-checked:border-brand-blue-teal transition-all duration-150"
+                class="h-[18px] w-[18px] inline-flex items-center justify-center border border-brand-light rounded-[3px] peer-checked:bg-brand-blue-teal peer-checked:border-brand-blue-teal transition-all duration-150"
                 aria-hidden="true"
               >
                 <!-- checkmark: hidden by default, shown when peer is checked -->
@@ -2628,7 +2641,7 @@
       </div>
     </div>
     <div
-      class="flex items-center justify-center min-h-screen lg:hidden capitalize px-5"
+      class="flex items-center justify-center min-h-screen md:hidden capitalize px-5"
     >
       <div
         class="flex flex-col justify-center items-center text-center space-y-2"
@@ -2660,7 +2673,7 @@
         class="bg-white px-[12px] py-[10px] rounded-lg border border-brand-light max-w-[212px] w-full"
       >
         <div class="flex justify-between items-center px-[4px]">
-          <span class="text-xl font-bold">Add cerifictations</span>
+          <span class="text-base font-bold">Add cerifictations</span>
           <button class="text-[#A4B5BF] hover:text-[#2B2D41] cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -2680,165 +2693,104 @@
           </button>
         </div>
         <ul
-          class="flex-1 border border-brand-light rounded-[5px] p-[6px] max-h-[177px] overflow-y-auto scrollbar-hide my-3"
+          class="flex-1 border border-brand-light rounded-[5px] p-[6px] min-h-[177px] overflow-y-auto scrollbar-hide my-3"
         >
           <li
-            class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+            tabindex="0"
+            class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 focus-within:bg-[#EDF0F2]/60 focus:bg-[#EDF0F2]/60 group flex items-center justify-between rounded-[3px] outline-none transition"
           >
             <p>Plano MP</p>
             <button
-              class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+              class="text-[#A4B5BF] cursor-pointer opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="9.5"
-                height="10.307"
-                viewBox="0 0 9.5 10.307"
-                class=""
-              >
-                <g id="h" transform="translate(-3.25 -2.753)">
-                  <g
-                    id="Group_90"
-                    data-name="Group 90"
-                    transform="translate(3.25 2.753)"
-                  >
-                    <path
-                      id="Path_134"
-                      data-name="Path 134"
-                      d="M11.529,4.108H10.307L8.9,3.05a1.5,1.5,0,0,0-1.791,0L5.693,4.108H4.471a1.221,1.221,0,1,0,0,2.443h7.057a1.221,1.221,0,1,0,0-2.443ZM7.593,3.7a.684.684,0,0,1,.814,0l.543.407H7.05Zm3.936,2.036H4.471a.407.407,0,1,1,0-.814h7.057a.407.407,0,1,1,0,.814Z"
-                      transform="translate(-3.25 -2.753)"
-                      fill="currentColor"
-                    />
-                    <path
-                      id="Path_135"
-                      data-name="Path 135"
-                      d="M12.28,11.255a.406.406,0,0,0-.467.337l-.586,3.523a1.215,1.215,0,0,1-1.205,1.021H7.351a1.219,1.219,0,0,1-1.205-1.021L5.56,11.592a.407.407,0,0,0-.8.13l.586,3.523a2.025,2.025,0,0,0,2.009,1.7h2.671a2.03,2.03,0,0,0,2.009-1.7l.586-3.523a.406.406,0,0,0-.337-.467Z"
-                      transform="translate(-3.936 -6.637)"
-                      fill="currentColor"
-                    />
-                    <path
-                      id="Path_136"
-                      data-name="Path 136"
-                      d="M9.108,14.784h.065a.413.413,0,0,0,.337-.467L9.06,11.6a.407.407,0,0,0-.8.13l.451,2.714a.407.407,0,0,0,.4.342Z"
-                      transform="translate(-5.536 -6.642)"
-                      fill="currentColor"
-                    />
-                    <path
-                      id="Path_137"
-                      data-name="Path 137"
-                      d="M13.827,14.778a.407.407,0,0,0,.4-.342l.451-2.714a.407.407,0,0,0-.8-.13l-.451,2.714a.406.406,0,0,0,.337.467h.065Z"
-                      transform="translate(-7.899 -6.637)"
-                      fill="currentColor"
-                    />
-                  </g>
-                </g>
-              </svg>
+             <img src="./assets/svg/calendar-blank.svg" alt="calendar" class="w-[10px] h-[10px]">
+
             </button>
           </li>
           <li
-            class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+            tabindex="0"
+            class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 focus-within:bg-[#EDF0F2]/60 focus:bg-[#EDF0F2]/60 group flex items-center justify-between rounded-[3px] outline-none transition"
           >
-            <p>Line supply</p>
+            <p>Line supply
+</p>
             <button
-              class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+              class="text-[#A4B5BF] cursor-pointer opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="9.5"
-                height="10.307"
-                viewBox="0 0 9.5 10.307"
-                class=""
-              >
-                <g id="h" transform="translate(-3.25 -2.753)">
-                  <g
-                    id="Group_90"
-                    data-name="Group 90"
-                    transform="translate(3.25 2.753)"
-                  >
-                    <path
-                      id="Path_134"
-                      data-name="Path 134"
-                      d="M11.529,4.108H10.307L8.9,3.05a1.5,1.5,0,0,0-1.791,0L5.693,4.108H4.471a1.221,1.221,0,1,0,0,2.443h7.057a1.221,1.221,0,1,0,0-2.443ZM7.593,3.7a.684.684,0,0,1,.814,0l.543.407H7.05Zm3.936,2.036H4.471a.407.407,0,1,1,0-.814h7.057a.407.407,0,1,1,0,.814Z"
-                      transform="translate(-3.25 -2.753)"
-                      fill="currentColor"
-                    />
-                    <path
-                      id="Path_135"
-                      data-name="Path 135"
-                      d="M12.28,11.255a.406.406,0,0,0-.467.337l-.586,3.523a1.215,1.215,0,0,1-1.205,1.021H7.351a1.219,1.219,0,0,1-1.205-1.021L5.56,11.592a.407.407,0,0,0-.8.13l.586,3.523a2.025,2.025,0,0,0,2.009,1.7h2.671a2.03,2.03,0,0,0,2.009-1.7l.586-3.523a.406.406,0,0,0-.337-.467Z"
-                      transform="translate(-3.936 -6.637)"
-                      fill="currentColor"
-                    />
-                    <path
-                      id="Path_136"
-                      data-name="Path 136"
-                      d="M9.108,14.784h.065a.413.413,0,0,0,.337-.467L9.06,11.6a.407.407,0,0,0-.8.13l.451,2.714a.407.407,0,0,0,.4.342Z"
-                      transform="translate(-5.536 -6.642)"
-                      fill="currentColor"
-                    />
-                    <path
-                      id="Path_137"
-                      data-name="Path 137"
-                      d="M13.827,14.778a.407.407,0,0,0,.4-.342l.451-2.714a.407.407,0,0,0-.8-.13l-.451,2.714a.406.406,0,0,0,.337.467h.065Z"
-                      transform="translate(-7.899 -6.637)"
-                      fill="currentColor"
-                    />
-                  </g>
-                </g>
-              </svg>
+              <img src="./assets/svg/calendar-blank.svg" alt="calendar" class="w-[10px] h-[10px]">
             </button>
           </li>
           <li
-            class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+            tabindex="0"
+            class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 focus-within:bg-[#EDF0F2]/60 focus:bg-[#EDF0F2]/60 group flex items-center justify-between rounded-[3px] outline-none transition"
           >
             <p>Packer</p>
             <button
-              class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+              class="text-[#A4B5BF] cursor-pointer opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="9.5"
-                height="10.307"
-                viewBox="0 0 9.5 10.307"
-                class=""
-              >
-                <g id="h" transform="translate(-3.25 -2.753)">
-                  <g
-                    id="Group_90"
-                    data-name="Group 90"
-                    transform="translate(3.25 2.753)"
-                  >
-                    <path
-                      id="Path_134"
-                      data-name="Path 134"
-                      d="M11.529,4.108H10.307L8.9,3.05a1.5,1.5,0,0,0-1.791,0L5.693,4.108H4.471a1.221,1.221,0,1,0,0,2.443h7.057a1.221,1.221,0,1,0,0-2.443ZM7.593,3.7a.684.684,0,0,1,.814,0l.543.407H7.05Zm3.936,2.036H4.471a.407.407,0,1,1,0-.814h7.057a.407.407,0,1,1,0,.814Z"
-                      transform="translate(-3.25 -2.753)"
-                      fill="currentColor"
-                    />
-                    <path
-                      id="Path_135"
-                      data-name="Path 135"
-                      d="M12.28,11.255a.406.406,0,0,0-.467.337l-.586,3.523a1.215,1.215,0,0,1-1.205,1.021H7.351a1.219,1.219,0,0,1-1.205-1.021L5.56,11.592a.407.407,0,0,0-.8.13l.586,3.523a2.025,2.025,0,0,0,2.009,1.7h2.671a2.03,2.03,0,0,0,2.009-1.7l.586-3.523a.406.406,0,0,0-.337-.467Z"
-                      transform="translate(-3.936 -6.637)"
-                      fill="currentColor"
-                    />
-                    <path
-                      id="Path_136"
-                      data-name="Path 136"
-                      d="M9.108,14.784h.065a.413.413,0,0,0,.337-.467L9.06,11.6a.407.407,0,0,0-.8.13l.451,2.714a.407.407,0,0,0,.4.342Z"
-                      transform="translate(-5.536 -6.642)"
-                      fill="currentColor"
-                    />
-                    <path
-                      id="Path_137"
-                      data-name="Path 137"
-                      d="M13.827,14.778a.407.407,0,0,0,.4-.342l.451-2.714a.407.407,0,0,0-.8-.13l-.451,2.714a.406.406,0,0,0,.337.467h.065Z"
-                      transform="translate(-7.899 -6.637)"
-                      fill="currentColor"
-                    />
-                  </g>
-                </g>
-              </svg>
+             <img src="./assets/svg/calendar-blank.svg" alt="calendar" class="w-[10px] h-[10px]">
+
+            </button>
+          </li>
+          <li
+            tabindex="0"
+            class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 focus-within:bg-[#EDF0F2]/60 focus:bg-[#EDF0F2]/60 group flex items-center justify-between rounded-[3px] outline-none transition"
+          >
+            <p>PMO mp
+</p>
+            <button
+              class="text-[#A4B5BF] cursor-pointer opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity"
+            > <img src="./assets/svg/calendar-blank.svg" alt="calendar" class="w-[10px] h-[10px]">
+
+            </button>
+          </li>
+          <li
+            tabindex="0"
+            class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 focus-within:bg-[#EDF0F2]/60 focus:bg-[#EDF0F2]/60 group flex items-center justify-between rounded-[3px] outline-none transition"
+          >
+            <p>PMO SNX
+</p>
+            <button
+              class="text-[#A4B5BF] cursor-pointer opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity"
+            >
+              <img src="./assets/svg/calendar-blank.svg" alt="calendar" class="w-[10px] h-[10px]">
+
+            </button>
+          </li>
+          <li
+            tabindex="0"
+            class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 focus-within:bg-[#EDF0F2]/60 focus:bg-[#EDF0F2]/60 group flex items-center justify-between rounded-[3px] outline-none transition"
+          >
+            <p>Plano MP</p>
+            <button
+              class="text-[#A4B5BF] cursor-pointer opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity"
+            >
+            <img src="./assets/svg/calendar-blank.svg" alt="calendar" class="w-[10px] h-[10px]">
+
+            </button>
+          </li>
+          <li
+            tabindex="0"
+            class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 focus-within:bg-[#EDF0F2]/60 focus:bg-[#EDF0F2]/60 group flex items-center justify-between rounded-[3px] outline-none transition"
+          >
+            <p>Tester plus
+</p>
+            <button
+              class="text-[#A4B5BF] cursor-pointer opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity"
+            >
+            <img src="./assets/svg/calendar-blank.svg" alt="calendar" class="w-[10px] h-[10px]">
+
+            </button>
+          </li>
+          <li
+            tabindex="0"
+            class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 focus-within:bg-[#EDF0F2]/60 focus:bg-[#EDF0F2]/60 group flex items-center justify-between rounded-[3px] outline-none transition"
+          >
+            <p>GO PC</p>
+            <button
+              class="text-[#A4B5BF] cursor-pointer opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity"
+            >
+            <img src="./assets/svg/calendar-blank.svg" alt="calendar" class="w-[10px] h-[10px]">
+
             </button>
           </li>
         </ul>
@@ -2858,6 +2810,7 @@
         </div>
       </div>
     </div>
+    <script src="./js/dateinput.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

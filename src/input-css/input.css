@@ -115,18 +115,33 @@ body {
   scrollbar-color: #a4b5bf #edf0f2;
 }
 
-
 /* Hide the checkbox */
-    .accordion-checkbox {
+.accordion-checkbox {
+  display: none;
+}
+
+/* Rotate arrow when checked */
+.accordion-checkbox:checked ~ label .arrow-icon {
+  transform: rotate(180deg);
+}
+
+/* Show content when checked */
+.accordion-checkbox:checked ~ .accordion-content {
+  max-height: 500px;
+}
+.expands {
+      transition: all 0.3s ease;
+    }
+    
+    /* Custom styles for checked state */
+    input[type="checkbox"]:checked ~ .card-content .short-text {
       display: none;
     }
-
-    /* Rotate arrow when checked */
-    .accordion-checkbox:checked ~ label .arrow-icon {
-      transform: rotate(180deg);
+    
+    input[type="checkbox"]:checked ~ .card-content .expandable-section {
+      grid-template-rows: 1fr;
     }
-
-    /* Show content when checked */
-    .accordion-checkbox:checked ~ .accordion-content {
-      max-height: 500px;
+    
+    input[type="checkbox"]:checked ~ .card-content .chevron-down {
+      transform: rotate(180deg);
     }

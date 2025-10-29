@@ -35,7 +35,7 @@
   </head>
 
   <body class="bg-brand-gray-bg">
-    <div class="min-h-screen hidden lg:block">
+    <div class="min-h-screen hidden md:block">
       <div class="grid grid-rows-[auto_1fr] grid-cols-[1fr] h-screen">
         <!-- Header -->
         <header
@@ -43,7 +43,7 @@
         >
           <div class="w-full mx-auto px-5 flex items-center justify-between">
             <!-- Left section -->
-            <div class="flex items-center space-x-3 xl:space-x-5">
+            <a href="#" class="flex items-center space-x-3 xl:space-x-5">
               <!-- Icon -->
               <img
                 src="./assets/svg/logo.svg"
@@ -51,7 +51,7 @@
                 class="w-5 h-5 xl:w-6 xl:h-6"
               />
               <span class="font-bold text-xl xl:text-2xl">People planner</span>
-            </div>
+            </a>
 
             <!-- Center navigation -->
             <nav
@@ -2719,7 +2719,7 @@
       </div>
     </div>
     <div
-      class="flex items-center justify-center min-h-screen lg:hidden capitalize px-5"
+      class="flex items-center justify-center min-h-screen md:hidden capitalize px-5"
     >
       <div
         class="flex flex-col justify-center items-center text-center space-y-2"
@@ -2745,690 +2745,702 @@
     </div>
     <!-- modal -->
     <div
-      class="fixed inset-0 bg-[#2B2D41]/30 flex justify-center items-center z-[100]"
+      class="fixed inset-0 bg-[#2B2D41]/30 flex justify-center items-center z-[100] overflow-auto"
     >
-      <div
-        class="bg-white px-[12px] py-[10px] rounded-lg border border-brand-light max-w-[386px] min-h-[507px] overflow-auto w-full"
-      >
-        <div class="flex justify-between items-center px-[4px]">
-          <span class="text-xl font-bold"
-            >Verlofaanvraag Thomas Dijkshoorn
-          </span>
-          <button class="text-[#A4B5BF] hover:text-[#2B2D41] cursor-pointer">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="9.613"
-              height="9.613"
-              viewBox="0 0 9.613 9.613"
-              class=""
-            >
-              <path
-                id="Path_close"
-                data-name="Path / close"
-                d="M14.613,5.968,13.645,5,9.807,8.838,5.968,5,5,5.968,8.838,9.807,5,13.645l.968.968,3.838-3.838,3.838,3.838.968-.968L10.775,9.807Z"
-                transform="translate(-5 -5)"
-                fill="currentColor"
-              />
-            </svg>
-          </button>
-        </div>
-        <div class="pt-4">
-          <!-- top -->
-          <div class="flex flex-row items-end">
-            <div class="w-[35%]">
-              <div class="flex items-center gap-3">
-                <img
-                  src="./assets/svg/group.svg"
-                  alt="Leave"
-                  class="w-[18px] h-[18px]"
-                />
-                <div>
-                  <span
-                    class="text-[10px] font-bold text-brand-dark leading-none"
-                    >Groep</span
+      <div class="">
+        <div
+          class="bg-white px-[12px] py-[10px] rounded-lg border border-brand-light max-w-[386px] min-h-[507px] overflow-auto w-full"
+        >
+          <div class="w-[386px] h-[507px]">
+            <div class="flex justify-between items-center px-[4px]">
+              <span class="text-base font-bold"
+                >Verlofaanvraag Thomas Dijkshoorn
+              </span>
+              <button
+                class="text-[#A4B5BF] hover:text-[#2B2D41] cursor-pointer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="9.613"
+                  height="9.613"
+                  viewBox="0 0 9.613 9.613"
+                  class=""
+                >
+                  <path
+                    id="Path_close"
+                    data-name="Path / close"
+                    d="M14.613,5.968,13.645,5,9.807,8.838,5.968,5,5,5.968,8.838,9.807,5,13.645l.968.968,3.838-3.838,3.838,3.838.968-.968L10.775,9.807Z"
+                    transform="translate(-5 -5)"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="pt-4">
+              <!-- top -->
+              <div class="flex flex-row items-end">
+                <div class="w-[35%]">
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="./assets/svg/group.svg"
+                      alt="Leave"
+                      class="w-[18px] h-[18px]"
+                    />
+                    <div>
+                      <span
+                        class="text-[10px] font-bold text-brand-dark leading-none"
+                        >Groep</span
+                      >
+                      <div class="text-[10px] leading-tight">
+                        Blauw
+                        <span class="text-[10px] text-brand-mid-gray"
+                          >(min 5)</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[65%]">
+                  <div
+                    class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
                   >
-                  <div class="text-[10px] leading-tight">
-                    Blauw
-                    <span class="text-[10px] text-brand-mid-gray">(min 5)</span>
+                    <div class="text-center text-[8px]">
+                      <span class="font-bold block uppercase">Ma</span
+                      ><span class="block">19-05</span>
+                    </div>
+                    <div class="text-center text-[8px]">
+                      <span class="font-bold block uppercase">Di</span
+                      ><span class="block">19-05</span>
+                    </div>
+                    <div class="text-center text-[8px]">
+                      <span class="font-bold block uppercase">Wo</span
+                      ><span class="block">19-05</span>
+                    </div>
+                    <div class="text-center text-[8px]">
+                      <span class="font-bold block uppercase">Do</span
+                      ><span class="block">19-05</span>
+                    </div>
+                    <div class="text-center text-[8px]">
+                      <span class="font-bold block uppercase">Vr</span
+                      ><span class="block">19-05</span>
+                    </div>
+                    <div class="text-center text-[8px]">
+                      <span class="font-bold block uppercase">Za</span
+                      ><span class="block">19-05</span>
+                    </div>
+                    <div class="text-center text-[8px]">
+                      <span class="font-bold block uppercase">Zo</span
+                      ><span class="block">19-05</span>
+                    </div>
+                    <!-- new -->
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-[#C9EFDF] ring ring-[#2BC083] rounded-[5px] text-[#2BC083] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      +1
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-[#C9EFDF] ring ring-[#2BC083] rounded-[5px] text-[#2BC083] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      +1
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="w-[65%]">
-              <div
-                class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
-              >
-                <div class="text-center text-[8px]">
-                  <span class="font-bold block uppercase">Ma</span
-                  ><span class="block">19-05</span>
-                </div>
-                <div class="text-center text-[8px]">
-                  <span class="font-bold block uppercase">Di</span
-                  ><span class="block">19-05</span>
-                </div>
-                <div class="text-center text-[8px]">
-                  <span class="font-bold block uppercase">Wo</span
-                  ><span class="block">19-05</span>
-                </div>
-                <div class="text-center text-[8px]">
-                  <span class="font-bold block uppercase">Do</span
-                  ><span class="block">19-05</span>
-                </div>
-                <div class="text-center text-[8px]">
-                  <span class="font-bold block uppercase">Vr</span
-                  ><span class="block">19-05</span>
-                </div>
-                <div class="text-center text-[8px]">
-                  <span class="font-bold block uppercase">Za</span
-                  ><span class="block">19-05</span>
-                </div>
-                <div class="text-center text-[8px]">
-                  <span class="font-bold block uppercase">Zo</span
-                  ><span class="block">19-05</span>
-                </div>
-                <!-- new -->
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-[#C9EFDF] ring ring-[#2BC083] rounded-[5px] text-[#2BC083] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  +1
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-[#C9EFDF] ring ring-[#2BC083] rounded-[5px] text-[#2BC083] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  +1
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- 2 -->
-          <div class="flex flex-row items-center pt-3">
-            <div class="w-[35%]">
-              <span class="text-[10px] text-brand-dark leading-none"
-                >Kwaliteit</span
-              >
-            </div>
-            <div class="w-[65%]">
-              <div
-                class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
-              >
-                <!-- new -->
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- 3 -->
-          <div class="flex flex-row items-center pb-3">
-            <div class="w-[35%]">
-              <span class="text-[10px] text-brand-dark leading-none"
-                >Minimaal benodigd</span
-              >
-            </div>
-            <div class="w-[65%]">
-              <div
-                class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
-              >
-                <!-- new -->
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- 4 -->
-          <div class="flex flex-row items-center">
-            <div class="w-[35%]">
-              <span class="text-[10px] text-brand-dark leading-none"
-                >Thijmen Prins
-              </span>
-            </div>
-            <div class="w-[65%]">
-              <div
-                class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
-              >
-                <!-- new -->
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- 5 -->
-          <div class="flex flex-row items-center">
-            <div class="w-[35%]">
-              <span class="text-[10px] text-brand-dark leading-none"
-                >Ivan Evers
-              </span>
-            </div>
-            <div class="w-[65%]">
-              <div
-                class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
-              >
-                <!-- new -->
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- 6 -->
-          <div class="flex flex-row items-center">
-            <div class="w-[35%]">
-              <span class="text-[10px] text-brand-dark leading-none"
-                >Maja Kamińska
-              </span>
-            </div>
-            <div class="w-[65%]">
-              <div
-                class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
-              >
-                <!-- new -->
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- 7 -->
-          <div class="flex flex-row items-center">
-            <div class="w-[35%]">
-              <span class="text-[10px] text-brand-dark leading-none"
-                >Jannik Wolf
-              </span>
-            </div>
-            <div class="w-[65%]">
-              <div
-                class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
-              >
-                <!-- new -->
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- 8 -->
-          <div class="flex flex-row items-center">
-            <div class="w-[35%]">
-              <span class="text-[10px] text-brand-dark leading-none"
-                >Mateusz Włodarczyk
-              </span>
-            </div>
-            <div class="w-[65%]">
-              <div
-                class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
-              >
-                <!-- new -->
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- 8 -->
-          <div class="flex flex-row items-center">
-            <div class="w-[35%]">
-              <span class="text-[10px] text-brand-dark leading-none"
-                >Abdullah Teki̇n
-              </span>
-            </div>
-            <div class="w-[65%]">
-              <div
-                class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
-              >
-                <!-- new -->
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  5
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  6
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- bottom -->
-          <div class="flex flex-row items-center pt-4">
-            <div class="w-[35%]">
-              <div class="flex items-center gap-3">
-                <img
-                  src="./assets/svg/certificate-outline.svg"
-                  alt="certificate"
-                  class="w-[18px] h-[18px]"
-                />
-
-                <div>
-                  <span
-                    class="text-[10px] font-bold text-brand-dark leading-none"
+              <!-- 2 -->
+              <div class="flex flex-row items-center pt-3">
+                <div class="w-[35%]">
+                  <span class="text-[10px] text-brand-dark leading-none"
                     >Kwaliteit</span
                   >
-                  <div class="text-[10px] leading-tight">
-                    PMO SNX
-                    <span class="text-[10px] text-brand-mid-gray">(min 3)</span>
+                </div>
+                <div class="w-[65%]">
+                  <div
+                    class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
+                  >
+                    <!-- new -->
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="flex flex-row items-center pb-3">
+                <div class="w-[35%]">
+                  <span class="text-[10px] text-brand-dark leading-none"
+                    >Minimaal benodigd</span
+                  >
+                </div>
+                <div class="w-[65%]">
+                  <div
+                    class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
+                  >
+                    <!-- new -->
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="flex flex-row items-center">
+                <div class="w-[35%]">
+                  <span class="text-[10px] text-brand-dark leading-none"
+                    >Thijmen Prins
+                  </span>
+                </div>
+                <div class="w-[65%]">
+                  <div
+                    class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
+                  >
+                    <!-- new -->
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="flex flex-row items-center">
+                <div class="w-[35%]">
+                  <span class="text-[10px] text-brand-dark leading-none"
+                    >Ivan Evers
+                  </span>
+                </div>
+                <div class="w-[65%]">
+                  <div
+                    class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
+                  >
+                    <!-- new -->
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="flex flex-row items-center">
+                <div class="w-[35%]">
+                  <span class="text-[10px] text-brand-dark leading-none"
+                    >Maja Kamińska
+                  </span>
+                </div>
+                <div class="w-[65%]">
+                  <div
+                    class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
+                  >
+                    <!-- new -->
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 7 -->
+              <div class="flex flex-row items-center">
+                <div class="w-[35%]">
+                  <span class="text-[10px] text-brand-dark leading-none"
+                    >Jannik Wolf
+                  </span>
+                </div>
+                <div class="w-[65%]">
+                  <div
+                    class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
+                  >
+                    <!-- new -->
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
+
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 8 -->
+              <div class="flex flex-row items-center">
+                <div class="w-[35%]">
+                  <span class="text-[10px] text-brand-dark leading-none"
+                    >Mateusz Włodarczyk
+                  </span>
+                </div>
+                <div class="w-[65%]">
+                  <div
+                    class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
+                  >
+                    <!-- new -->
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
+
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- 8 -->
+              <div class="flex flex-row items-center">
+                <div class="w-[35%]">
+                  <span class="text-[10px] text-brand-dark leading-none"
+                    >Abdullah Teki̇n
+                  </span>
+                </div>
+                <div class="w-[65%]">
+                  <div
+                    class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
+                  >
+                    <!-- new -->
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      5
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      6
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- bottom -->
+              <div class="flex flex-row items-center pt-4">
+                <div class="w-[35%]">
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="./assets/svg/certificate-outline.svg"
+                      alt="certificate"
+                      class="w-[18px] h-[18px]"
+                    />
+
+                    <div>
+                      <span
+                        class="text-[10px] font-bold text-brand-dark leading-none"
+                        >Kwaliteit</span
+                      >
+                      <div class="text-[10px] leading-tight">
+                        PMO SNX
+                        <span class="text-[10px] text-brand-mid-gray"
+                          >(min 3)</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[65%]">
+                  <div
+                    class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
+                  >
+                    <!-- new -->
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      -1
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      -1
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
+                    >
+                      0
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="w-[65%]">
-              <div
-                class="grid grid-cols-7 items-center justify-center gap-x-1 gap-y-[6px] mt-[10px]"
+
+            <div
+              class="flex flex-row justify-center items-center gap-2 pt-[26px]"
+            >
+              <button
+                type="button"
+                class="py-[6px] min-h-[22px] inline-block text-[10px] font-bold text-white bg-[#36BE84] hover:bg-[#3AA5A0] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 min-w-[68px] w-full"
               >
-                <!-- new -->
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  -1
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-[#FBD1D0] ring ring-[#E12641] rounded-[5px] text-[#E12641] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  -1
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center cursor-pointer outline-none items-center bg-white ring ring-[#EDF0F2] rounded-[5px] text-[#2B2D41] text-[10px] font-semibold w-[25px] h-[25px]"
-                >
-                  0
-                </button>
-              </div>
+                Approve
+              </button>
+              <button
+                type="button"
+                class="py-[6px] min-h-[22px] inline-block text-[10px] font-bold text-white hover:text-white bg-[#E12641] hover:bg-[#2B2D41] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 min-w-[68px] w-full"
+              >
+                Decline
+              </button>
+              <button
+                type="button"
+                class="py-[6px] min-h-[22px] inline-block text-[10px] font-bold text-[#A4B5BF] hover:text-white bg-[#EDF0F2] hover:bg-[#2B2D41] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 min-w-[68px] w-full"
+              >
+                Reserve
+              </button>
             </div>
           </div>
-        </div>
-
-        <div class="flex flex-row justify-center items-center gap-2 pt-[26px]">
-          <button
-            type="button"
-            class="py-[6px] min-h-[22px] inline-block text-[10px] font-bold text-white bg-[#36BE84] hover:bg-[#3AA5A0] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 min-w-[68px] w-full"
-          >
-            Approve
-          </button>
-          <button
-            type="button"
-            class="py-[6px] min-h-[22px] inline-block text-[10px] font-bold text-white hover:text-white bg-[#E12641] hover:bg-[#2B2D41] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 min-w-[68px] w-full"
-          >
-            Decline
-          </button>
-          <button
-            type="button"
-            class="py-[6px] min-h-[22px] inline-block text-[10px] font-bold text-[#A4B5BF] hover:text-white bg-[#EDF0F2] hover:bg-[#2B2D41] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 min-w-[68px] w-full"
-          >
-            Reserve
-          </button>
         </div>
       </div>
     </div>
